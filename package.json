@@ -1,0 +1,35 @@
+{
+  "name": "puremvc-es6",
+  "version": "1.0.0",
+  "description": "puremvc refactoring with es6",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnipbao/puremvc-es6.git"
+  },
+  "keywords": [
+    "puremvc"
+  ],
+  "author": "Gnip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnipbao/puremvc-es6/issues"
+  },
+  "homepage": "https://github.com/gnipbao/puremvc-es6#readme",
+  "devDependencies": {
+    "commitizen": "^3.1.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^6.0.1",
+    "husky": "^2.7.0",
+    "lint-staged": "^8.2.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

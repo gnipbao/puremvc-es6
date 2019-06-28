@@ -1,0 +1,5 @@
+package.json
+doc/
+dist/
+node_modules/
+*.yml

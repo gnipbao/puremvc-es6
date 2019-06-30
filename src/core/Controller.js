@@ -21,6 +21,10 @@ class Controller {
 		return this.instanceMap.get(key);
 	}
 
+	static removeController(key) {
+		this.instanceMap.delete(key);
+	}
+
 	executeCommand(note) {
 		let commandClassRef = this.commandMap.get(note.getName());
 		if (commandClassRef == null) return;
@@ -49,10 +53,6 @@ class Controller {
 			this.view.removeObserver(notificationName, this);
 			this.commandMap.delete(notificationName);
 		}
-	}
-
-	removeController(key) {
-		this.instanceMap.delete(key);
 	}
 }
 

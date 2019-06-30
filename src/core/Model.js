@@ -17,6 +17,10 @@ class Model {
 		return Model.instanceMap.get(key);
 	}
 
+	static removeModel(key) {
+		Model.instanceMap.delete(key);
+	}
+
 	initializeModel() {}
 
 	/**
@@ -51,10 +55,6 @@ class Model {
 			proxy.onRemove();
 		}
 		return proxy;
-	}
-
-	removeModel(key) {
-		Model.instanceMap.delete(key);
 	}
 }
 

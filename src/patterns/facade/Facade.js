@@ -149,3 +149,5 @@ Facade.instanceMap = new Map();
  * @static
  */
 Facade.MULTITON_MSG = 'Facade instance for this Multiton key already constructed!';
+
+export default Facade;
